@@ -106,6 +106,19 @@ year = 2021;
 }
 
 int isLeapYear(int year) {
+
+
+ if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
+        return 1;  //  leap year
+    } 
+    
+    else {
+        return 0;  //  not a leap year
+    }
+
+
+
+
   //TODO: Write your logic here
   //      The year is stored in the variable year
   //      Your function should return true (1) if it represents a leap year
