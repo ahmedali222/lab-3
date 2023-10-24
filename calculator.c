@@ -48,9 +48,16 @@ int main(int argc, char **argv) {
   printf("\n%.2lf / %.2lf = %.2lf",a,b,result);
 
   } else if(choice == 5) {
-   else{
-  result = a/b;
-  printf("\n%.2lf / %.2lf = %.2lf",a,b,result);
+      if(a>b){
+  printf("  \n%.2lf is minimum ",b);
+   {
+    else if(a<b){
+  printf("  \n%.2lf is minimum",a);
+  }
+else{
+  printf("  \nBoth %.2lf and %.2lf are equal ",a,b);
+}
+
 
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
