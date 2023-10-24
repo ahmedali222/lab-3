@@ -37,11 +37,21 @@ int main(int argc, char **argv) {
     result = a - b;
     printf("%f", result);
   } else if(choice == 3) {
-    //TODO: handle this case (multiplication)
+    result = a*b;
+    printf("\n%.2lf * %.2lf = %.2lf",a,b,result);
+
   } else if(choice == 4) {
-    //TODO: handle this case (division)
+      if (b==0){
+  printf("\nERROR. (division by zero is not defined)");
+  else{
+  result = a/b;
+  printf("\n%.2lf / %.2lf = %.2lf",a,b,result);
+
   } else if(choice == 5) {
-    //TODO: handle this case (minimum)
+   else{
+  result = a/b;
+  printf("\n%.2lf / %.2lf = %.2lf",a,b,result);
+
   } else if(choice == 6) {
     //TODO: handle this case (log_a(b))
   } else {
